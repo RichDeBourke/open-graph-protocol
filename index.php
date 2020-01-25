@@ -45,6 +45,7 @@ $html_supplement2 = Markdown::defaultTransform($markdown_supplement2);
         content="The Open Graph protocol enables any web page to become a rich object in a social graph.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ogp.me/">
+    <meta property="og:locale" content="en_US">
 
     <meta property="og:image" content="https://ogp.me/OG-logo-lg.png">
     <meta property="og:image:type" content="image/png">

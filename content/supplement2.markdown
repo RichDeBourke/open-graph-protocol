@@ -182,6 +182,18 @@
 </td>
 </tr>
 <tr>
+<tr>
+<td>
+    <code>og:locale</code>
+</td>
+<td>
+    Locale for the tags
+</td>
+<td>
+    HTML tag&rsquo;s lang attribute
+</td>
+</tr>
+<tr>
 <td colspan="3">
     <p style="text-align: center; padding-top: 1em;"><em>og:image data &ndash; repeated for each OG image that is provided:</em>
 </td>
@@ -239,6 +251,14 @@
 </td>
 <td colspan="2">
     Canonical URL &ndash; while websites are asked to provide the canonical URL for the webpage being shared, applications should utilize the URL provided with the rich link preview request, rather than the canonical URL.<sup>4</sup>
+</td>
+</tr>
+<tr>
+<td>
+    <code>og:locale:alternate</code>
+</td>
+<td colspan="2">
+    While a webpage may have alternate language versions available, rich link previews should be generated using the language version of the original link.
 </td>
 </tr>
 <tr>
