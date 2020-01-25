@@ -34,7 +34,7 @@
     <div id="body">
     <div id="header">
       <h1>The Open Graph protocol</h1>
-      <img alt="Open Graph protocol logo" src="content/logo.png" width="300" height="300">
+      <img alt="Open Graph protocol logo" src="logo.png" width="300" height="300">
     </div>
     <div id="content">
         <h2><a id="intro" href="#intro">Introduction</a></h2>
@@ -575,6 +575,8 @@ preview.</em></p>
     any web page to become a rich object in a social graph."&gt;`
 &lt;meta property="og:type" content="website"&gt;
 &lt;meta property="og:url" content="https://ogp.me/"&gt;
+&lt;meta property="og:locale" content="en_US"&gt;
+&lt;meta property="og:locale:alternate" content="fr_FR"&gt;
 &lt;meta property="og:image" content="https://ogp.me/OG-logo-lg.png"&gt;
 &lt;meta property="og:image:type" content="image/png"&gt;
 &lt;meta property="og:image:width" content="1200"&gt;
@@ -650,6 +652,24 @@ preview.</em></p>
             <td>
                 Canonical URL of the page.<br>
                 See the <a href="#metadata">Basic Metadata</a> section for more information.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>og:locale</code>
+            </td>
+            <td>
+                The locale the tags are marked up in.<br>
+                See the <a href="#optional">Optional Metadata</a> section for more information.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>og:locale:alternate</code>
+            </td>
+            <td>
+                Other locales the page is available in.<br>
+                See the <a href="#optional">Optional Metadata</a> section for more information.
             </td>
         </tr>
         <tr>
@@ -1119,6 +1139,13 @@ search engine’s normal practices.</p>
 URL for the webpage being shared, applications should utilize the URL 
 provided with the rich link preview request, rather than the canonical 
 URL.<sup>4</sup>
+</td>
+</tr>
+<td>
+    <code>og:locale:alternate</code>
+</td>
+<td colspan="2">
+    While a webpage may have alternate language versions available, rich link previews should be generated using the language version of the original link.
 </td>
 </tr>
 <tr>
